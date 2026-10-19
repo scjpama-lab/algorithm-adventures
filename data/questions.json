@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "topic": "SELECTION",
+      "question": "What is the main objective of the Selection Sort algorithm?",
+      "options": [
+        "To split an array into two halves",
+        "To put a list in order from smallest to biggest by repeatedly choosing the smallest item",
+        "To search for a specific target element in a sorted list",
+        "To pair up adjacent elements and swap them if they are out of order"
+      ],
+      "correct": 1,
+      "explanation": "Selection Sort repeatedly scans the unsorted list for the minimum element and moves it into its sorted position."
+    },
+    {
+      "id": 2,
+      "topic": "SELECTION",
+      "question": "What is the overall Big-O time complexity of Selection Sort?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(1)"],
+      "correct": 2,
+      "explanation": "Because Selection Sort uses nested loops to compare elements regardless of initial ordering, its complexity is always O(n^2)."
+    },
+    {
+      "id": 3,
+      "topic": "INSERTION",
+      "question": "How does Insertion Sort build its sorted portion compared to Selection Sort?",
+      "options": [
+        "It picks the absolute minimum and places it at the very end.",
+        "It takes one item at a time and inserts it into its correct sorted position among the previously sorted elements.",
+        "It splits the array into two equal halves recursively.",
+        "It randomly shuffles elements until they are sorted."
+      ],
+      "correct": 1,
+      "explanation": "Insertion sort picks the next item and shifts preceding larger items rightward to insert it in its correct position."
+    },
+    {
+      "id": 4,
+      "topic": "INSERTION",
+      "question": "What is the best-case time complexity of Insertion Sort when the input list is already sorted?",
+      "options": ["O(n^2)", "O(n log n)", "O(n)", "O(1)"],
+      "correct": 2,
+      "explanation": "When data is already sorted, Insertion Sort only makes n-1 comparisons and 0 inner loop shifts, giving O(n) best-case time."
+    },
+    {
+      "id": 5,
+      "topic": "DIVIDE",
+      "question": "What does the \"Divide\" step mean in a Divide-and-Conquer algorithm?",
+      "options": [
+        "Combining sorted sub-arrays into a single list",
+        "Breaking a problem into smaller, more manageable sub-problems of the same type",
+        "Deleting half of the elements to save memory",
+        "Dividing the runtime by the number of processors"
+      ],
+      "correct": 1,
+      "explanation": "Divide-and-Conquer breaks down complex problems into smaller sub-problems until they are small enough to solve directly."
+    },
+    {
+      "id": 6,
+      "topic": "RECURSION",
+      "question": "Which programming concept is foundational for implementing Divide-and-Conquer algorithms like Merge Sort?",
+      "options": ["Inheritance", "Recursion", "Pointers", "Infinite loops"],
+      "correct": 1,
+      "explanation": "Merge Sort recursively calls itself on the left and right halves of an array until reaching single-element base cases."
+    },
+    {
+      "id": 7,
+      "topic": "MERGE SORT",
+      "question": "What are the two main phases of Merge Sort?",
+      "options": ["Scan and Swap", "Push and Pop", "Divide (split) and Conquer (merge)", "Encapsulate and Inherit"],
+      "correct": 2,
+      "explanation": "Merge Sort recursively divides the unsorted list into sub-lists until size 1, then merges those sub-lists into a sorted list."
+    },
+    {
+      "id": 8,
+      "topic": "MERGE SORT",
+      "question": "How does Merge Sort handle combining two sorted sub-lists into one larger sorted list?",
+      "options": [
+        "It compares the front elements of both sub-lists and repeatedly picks the smaller one to place into a new combined list.",
+        "It appends them together and runs Selection Sort on the result.",
+        "It discards duplicates and keeps only unique elements.",
+        "It sorts them randomly until they fit."
+      ],
+      "correct": 0,
+      "explanation": "By comparing the head elements of two already sorted sub-lists, Merge Sort efficiently builds a merged sorted array."
+    },
+    {
+      "id": 9,
+      "topic": "MERGE SORT",
+      "question": "What is the time complexity of Merge Sort in all cases (Worst, Average, and Best)?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+      "correct": 1,
+      "explanation": "Merge Sort consistently splits arrays in log(n) levels and performs n work merging per level, yielding O(n log n) across all cases."
+    },
+    {
+      "id": 10,
+      "topic": "BIG-O",
+      "question": "Why is Merge Sort generally much faster than Selection Sort and Insertion Sort for very large datasets?",
+      "options": [
+        "Because it uses O(1) auxiliary space.",
+        "Because its O(n log n) growth rate scales significantly better than O(n^2) as n gets very large.",
+        "Because it never uses memory allocations.",
+        "Because it skips checking odd-indexed numbers."
+      ],
+      "correct": 1,
+      "explanation": "As n grows into thousands or millions of elements, O(n log n) growth rate requires vastly fewer operations than O(n^2)."
+    },
+    {
+      "id": 11,
+      "topic": "MEMORY",
+      "question": "What is a major trade-off or disadvantage of Merge Sort regarding memory usage?",
+      "options": [
+        "It is an in-place algorithm that cannot use extra memory.",
+        "It requires extra auxiliary space (out-of-place) to store the split sub-arrays during merging.",
+        "It causes memory leaks in Python.",
+        "It requires exponential space O(2^n)."
+      ],
+      "correct": 1,
+      "explanation": "Standard Merge Sort requires O(n) auxiliary space to hold temporary left and right sub-arrays during the merge phase."
+    },
+    {
+      "id": 12,
+      "topic": "RECURSION",
+      "question": "In recursion, what is the critical condition required to prevent infinite loops and stack overflow?",
+      "options": [
+        "A base case that stops the recursion when a condition is met",
+        "A global variable tracking loop counts",
+        "A try-except error handler",
+        "An iterative loop wrapper"
+      ],
+      "correct": 0,
+      "explanation": "A base case specifies when the function should return a value without making further recursive calls."
+    },
+    {
+      "id": 13,
+      "topic": "COUNTING",
+      "question": "If a list has n = 8 elements, how many total comparisons are performed by Selection Sort?",
+      "options": ["15", "21", "28", "64"],
+      "correct": 2,
+      "explanation": "Using the comparisons formula T(n) = n(n-1)/2: T(8) = (8 * 7) / 2 = 28 comparisons."
+    },
+    {
+      "id": 14,
+      "topic": "COUNTING",
+      "question": "Which sorting algorithm performs the fewest comparisons when given an already sorted list?",
+      "options": [
+        "Selection Sort",
+        "Insertion Sort",
+        "Both perform the exact same number",
+        "Neither can process sorted lists"
+      ],
+      "correct": 1,
+      "explanation": "Insertion Sort makes only (n-1) comparisons on an already sorted list, whereas Selection Sort still performs n(n-1)/2 comparisons."
+    },
+    {
+      "id": 15,
+      "topic": "IN-PLACE",
+      "question": "When choosing between sorting algorithms, which factor determines whether an algorithm is classified as \"in-place\"?",
+      "options": [
+        "Whether it runs inside a web browser or terminal",
+        "Whether it sorts the list using little to no extra memory allocation (O(1) auxiliary space)",
+        "Whether it is written in Python or C++",
+        "Whether it sorts elements from right to left"
+      ],
+      "correct": 1,
+      "explanation": "An algorithm is in-place if it modifies the array directly without requiring significant additional memory (O(1) extra space)."
+    }
+  ],
+  "monsters": [
+    { "name": "Min-Value Goblin", "avatar": "👺", "badge": "SELECTION" },
+    { "name": "Unsorted Golem", "avatar": "🗿", "badge": "SELECTION" },
+    { "name": "Key Shift Specter", "avatar": "👻", "badge": "INSERTION" },
+    { "name": "Linear Shift Demon", "avatar": "👹", "badge": "INSERTION" },
+    { "name": "Divide-and-Conquer Hydra", "avatar": "🐍", "badge": "DIVIDE" },
+    { "name": "Recursive Phantom", "avatar": "🧙", "badge": "RECURSION" },
+    { "name": "Merge Chimera", "avatar": "🦁", "badge": "MERGE SORT" },
+    { "name": "Big-O Shadow Dragon", "avatar": "🐉", "badge": "FINAL BOSS" }
+  ],
+  "classes": [
+    { "key": "paladin", "icon": "🛡️", "name": "PALADIN" },
+    { "key": "sorcerer", "icon": "🧙‍♂️", "name": "SORCERER" },
+    { "key": "rogue", "icon": "🗡️", "name": "ARRAY ROGUE" }
+  ]
+}

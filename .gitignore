@@ -1,0 +1,5 @@
+node_modules/
+data/records.json
+data/records.json.tmp
+*.log
+.env
